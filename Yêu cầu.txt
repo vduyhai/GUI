@@ -1,0 +1,26 @@
+I. Chạy trên raspberry pi, hiển thị trên màn hình cảm ứng LCD 2560x1600
+II. Chương trình
+!!! Nếu không đề cập vị trí, các label đều đặt ở giữa màn hình. Với các label đặt cùng 1 hàng thì đặt cân với màn hình
+
+1. Màn hình chính
+- 1 label giữa màn hình có text "WELCOME"
+- 1 btn 'START' (dẫn sang màn hình 2)
+2. Màn hình 2
+- 1 label 'CHOOSE DRINKS'
+- 3 label cùng 1 hàng để chèn ảnh 
+- 3 btn cùng 1 hàng chọn đồ (Dẫn sang màn hình 3)
+- 1 btn cancel (Dẫn về màn hình chính)
+3. Màn hình 3
+* BÊN TRÁI
+- 1 label hiển thị camera của task OpenCV
+* BÊN PHẢI
+- 1 label "ARE YOU READY"
+- 1 label hiển thị đồng hồ đếm ngược 5s (Bên phải màn hình)
+- 1 btn 'READY' (Dưới đồng hồ đếm ngược)
+Sau khi ấn, tắt hiển thị btn, bắt đầu đếm ngược. Sau khi đếm ngược, hiển thị 'GO' thay vào đồng hồ trong 1,5s rồi tắt hiển thị, cho phép task OpenCV thực hiện
+- Hiển thị n (số lần squat) bắt đầu từ 0 thay vào label 'GO'
+- Khi n = 20 chuyển sang màn hình 4
+4. Màn hình 4
+- 1 label Heading 'WELL DONE'
+- 1 label 'PLEASE TAKE YOUR DRINK'
+- 1 btn 'THANK YOU' (Dẫn về màn hình chính)
